@@ -20,6 +20,11 @@ class WriteRequest(BaseModel):
     sheet_name: str = ""
 
 
+class AuthRequest(BaseModel):
+    username: str
+    password: str
+
+
 class HistoryQuery(BaseModel):
     query: str = ""
     priority: str = ""

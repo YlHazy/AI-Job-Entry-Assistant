@@ -6,17 +6,19 @@
 
 - 前端：`frontend/`（Vue 3 + Vite）
 - 后端：`backend/`（FastAPI API 层）
-- 核心能力：`src/`（Agent、解析、模板适配、Excel 写入、历史库、去重）
+- 核心能力：`src/`（Agent、鉴权、解析、模板适配、Excel 写入、历史库、去重）
 - 测试：`tests/`
 
 ## 2. 目录职责
 
 - `frontend/src/views/`：页面（总览 / 工作台 / 历史 / 设置）
-- `frontend/src/lib/api.js`：前端 API 封装（超时、错误兜底）
-- `frontend/src/state.js`：全局状态（pending、notice、结果缓存）
+- `frontend/src/lib/api.js`：前端 API 封装（超时、错误兜底、Bearer token）
+- `frontend/src/state.js`：全局状态（pending、notice、结果缓存、登录态）
 - `backend/main.py`：API 入口与路由
 - `backend/errors.py`：统一响应结构（`ok/data/error/request_id/timestamp`）
-- `backend/service.py`：业务编排（analyze/write/history/bootstrap）
+- `backend/service.py`：业务编排（auth/analyze/write/history/bootstrap）
+- `src/auth_store.py`：用户与 session token 存储
+- `src/history_store.py`：按 `user_id` 隔离的历史数据
 
 ## 3. 本地启动
 

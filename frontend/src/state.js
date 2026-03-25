@@ -1,15 +1,23 @@
 import { reactive } from "vue";
+import { getStoredAuthToken, setAuthToken } from "./lib/api";
 
 export const appState = reactive({
+  auth: {
+    token: getStoredAuthToken(),
+    user: null,
+    ready: false
+  },
   bootstrap: {
     llmConfigured: false,
-    historyCount: 0
+    historyCount: 0,
+    userCount: 0
   },
   pending: {
     bootstrap: null,
     analyze: null,
     write: null,
-    history: null
+    history: null,
+    auth: null
   },
   notices: [],
   activeTask: "",
@@ -53,4 +61,34 @@ export function finishTask(name) {
 
 export function isPending(name) {
   return Boolean(appState.pending[name]);
+}
+
+export function setSession(token, user) {
+  appState.auth.token = token || "";
+  appState.auth.user = user || null;
+  appState.auth.ready = true;
+  setAuthToken(appState.auth.token);
+}
+
+export function clearSession() {
+  appState.auth.token = "";
+  appState.auth.user = null;
+  appState.auth.ready = true;
+  resetWorkspaceState();
+  setAuthToken("");
+}
+
+export function markAuthReady() {
+  appState.auth.ready = true;
+}
+
+export function resetWorkspaceState() {
+  appState.bootstrap.llmConfigured = false;
+  appState.bootstrap.historyCount = 0;
+  appState.bootstrap.userCount = 0;
+  appState.record = null;
+  appState.steps = [];
+  appState.duplicate = null;
+  appState.historyRows = [];
+  appState.selectedHistory = null;
 }

@@ -12,11 +12,13 @@ PROMPTS_DIR = PROJECT_ROOT / "prompts"
 DATA_DIR = PROJECT_ROOT / "data"
 TEMPLATE_CACHE_PATH = DATA_DIR / "template_mappings.json"
 HISTORY_DB_PATH = DATA_DIR / "job_history.db"
+AUTH_DB_PATH = DATA_DIR / "auth.db"
 
 Bailian_API_KEY_ENV = "OPENAI_API_KEY"
 BAILIAN_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
 BAILIAN_MODEL = os.getenv("JOB_AGENT_MODEL", "qwen-plus")
 OCR_BACKEND = os.getenv("JOB_AGENT_OCR_BACKEND", "pytesseract")
+AUTH_SESSION_DAYS = int(os.getenv("JOB_AGENT_AUTH_SESSION_DAYS", "14"))
 
 
 def get_bailian_api_key() -> str:

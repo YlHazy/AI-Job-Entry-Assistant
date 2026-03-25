@@ -7,11 +7,14 @@ __pycache__/
 
 # Local test temp folders
 .pytest_tmp/
+.pytest_tmp*/
 .pytest_tmp_manual/
 .pytest_tmp_manual11/
 .pytest_tmp_manual12/
 .pytest_tmp_manual13/
 pytest-cache-files-*/
+tests/_runtime_pytest_tmp/
+tests/_tmp/auth_smoke/
 
 # Databases and local cache
 *.db
