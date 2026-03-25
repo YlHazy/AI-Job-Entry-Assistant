@@ -1,0 +1,431 @@
+:root {
+  --bg: #f6f4f0;
+  --surface: #fbfaf8;
+  --ink: #15141a;
+  --muted: #615f6a;
+  --line: rgba(21, 20, 26, 0.14);
+  --accent: #c76b2f;
+  --accent-ink: #3c1d0b;
+  --ok: #1c6e59;
+  --warn: #8e5d1e;
+  --error: #8e2d2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "IBM Plex Sans", "Segoe UI", "Microsoft YaHei UI", sans-serif;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(199, 107, 47, 0.12), transparent 23%),
+    radial-gradient(circle at 90% 12%, rgba(21, 20, 26, 0.07), transparent 30%),
+    var(--bg);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.sidebar {
+  border-right: 1px solid var(--line);
+  padding: 28px 20px;
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  background: rgba(251, 250, 248, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.brand h1 {
+  margin: 5px 0 8px;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+.brand p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.brand-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.menu {
+  display: grid;
+  gap: 7px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--ink);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.menu a:hover {
+  border-color: var(--line);
+  background: #fff;
+}
+
+.menu a.router-link-active {
+  border-color: rgba(199, 107, 47, 0.35);
+  background: rgba(199, 107, 47, 0.13);
+  color: var(--accent-ink);
+}
+
+.meta {
+  border-top: 1px dashed var(--line);
+  padding-top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+  display: grid;
+  gap: 8px;
+}
+
+.meta p {
+  margin: 0;
+}
+
+.workspace {
+  padding: 22px;
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(251, 250, 248, 0.84);
+}
+
+.topbar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.topbar strong {
+  font-size: 14px;
+}
+
+.notice-stack {
+  display: grid;
+  gap: 8px;
+}
+
+.notice {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.notice-success {
+  background: rgba(28, 110, 89, 0.12);
+  color: #155443;
+}
+
+.notice-warn {
+  background: rgba(142, 93, 30, 0.12);
+  color: #5c3a12;
+}
+
+.notice-error {
+  background: rgba(142, 45, 45, 0.13);
+  color: #611f1f;
+}
+
+.view-frame {
+  min-height: 0;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  background: rgba(251, 250, 248, 0.82);
+}
+
+.page-workspace,
+.page-history,
+.page-settings,
+.page-home {
+  display: grid;
+  gap: 14px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-head h2,
+.section-head h3 {
+  margin: 0;
+}
+
+.kicker {
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.subtle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.badge {
+  border: 1px solid rgba(199, 107, 47, 0.35);
+  background: rgba(199, 107, 47, 0.13);
+  color: var(--accent-ink);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  color: var(--ink);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.btn-primary {
+  border-color: transparent;
+  background: var(--accent);
+  color: #fff;
+}
+
+.action-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.tab-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab-btn.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: transparent;
+}
+
+.trace-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 10px;
+  margin-bottom: 9px;
+  background: #fff;
+}
+
+.trace-item summary {
+  cursor: pointer;
+}
+
+pre {
+  background: #f2efea;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: auto;
+  margin: 10px 0 0;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 9px 8px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table tbody tr.selected {
+  background: rgba(199, 107, 47, 0.08);
+}
+
+.home-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.action {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+}
+
+.action span {
+  font-weight: 600;
+}
+
+.action small {
+  color: var(--muted);
+}
+
+.flat-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(14, 13, 16, 0.26);
+  display: grid;
+  place-items: center;
+}
+
+.loading-card {
+  min-width: 210px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid rgba(199, 107, 47, 0.23);
+  border-top-color: var(--accent);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.view-fade-enter-active,
+.view-fade-leave-active {
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.view-fade-enter-from,
+.view-fade-leave-to {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 1080px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    gap: 14px;
+  }
+
+  .form-grid,
+  .home-actions {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,8 @@
+pydantic
+openpyxl
+openai
+pillow
+pytesseract
+fastapi
+uvicorn
+python-multipart

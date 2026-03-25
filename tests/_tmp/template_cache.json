@@ -1,0 +1,218 @@
+{
+  "bd57e981e4e3e0336a77e4d8e2ac4fd5d7710defa3b9894cbd12bb63d8f293f7": {
+    "workbook_key": "bd57e981e4e3e0336a77e4d8e2ac4fd5d7710defa3b9894cbd12bb63d8f293f7",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "0941e4942c94f52fe6aaf619ecc4ee05945403447d7f306b163f8fb2ca81bd36": {
+    "workbook_key": "0941e4942c94f52fe6aaf619ecc4ee05945403447d7f306b163f8fb2ca81bd36",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "041b68436bec5043582995680454ff8b3c8fd95ff66ef4cca36f11d4b0b211da": {
+    "workbook_key": "041b68436bec5043582995680454ff8b3c8fd95ff66ef4cca36f11d4b0b211da",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "96565f20123575750f670870942187a363dc3d2f8901cfb0b4e2867a476e1524": {
+    "workbook_key": "96565f20123575750f670870942187a363dc3d2f8901cfb0b4e2867a476e1524",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "a4f986f4495ebf32c6cd41594cc136ac55ee77b9335a48a19c42f7c9dd22bd2b": {
+    "workbook_key": "a4f986f4495ebf32c6cd41594cc136ac55ee77b9335a48a19c42f7c9dd22bd2b",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "1c9f7e33bb61f6f9410e2ba74ee9b12110490fe1294c34f4cd437f3b846e9569": {
+    "workbook_key": "1c9f7e33bb61f6f9410e2ba74ee9b12110490fe1294c34f4cd437f3b846e9569",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "1877663a2c6e4a4b1c4831570c6479d3141c2566e44281ac326653010d50c5f3": {
+    "workbook_key": "1877663a2c6e4a4b1c4831570c6479d3141c2566e44281ac326653010d50c5f3",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  },
+  "584caedede284c8436e1250d6b3a64391e698f0e2a3cb29861e1601e90cadf1a": {
+    "workbook_key": "584caedede284c8436e1250d6b3a64391e698f0e2a3cb29861e1601e90cadf1a",
+    "target_sheet": "JobBoard",
+    "header_row": 7,
+    "data_start_row": 8,
+    "key_columns": {
+      "company": 2,
+      "job_title": 3,
+      "role_category": 4,
+      "direction": 5,
+      "location": 6,
+      "jd_url": 7,
+      "source_platform": 8,
+      "applied_date": 9,
+      "resume_customized": 10,
+      "keyword_hit_level": 11,
+      "priority": 12,
+      "status": 13,
+      "risk_note": 14,
+      "summary_note": 15
+    },
+    "confidence": 0.95,
+    "warnings": [
+      "Header row is not at the top of the sheet."
+    ],
+    "detection_mode": "rules"
+  }
+}
